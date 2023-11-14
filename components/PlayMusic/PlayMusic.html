@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Music</title>
-    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="/assest/font/forn_icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./PlayMusic.css">
+    <link rel="stylesheet" href="/public/Global.css">
 </head>
 <body>
     <div class="main">
@@ -30,113 +31,78 @@
             <div class="sidebar">
                 <ul class="sidebar-list">
                     <li class="sidebar-item" >
-                        <a class="link" href="/components/HomePage/index.html">
+                        <a class="link" href="/components/HomePage/HomePage.html">
                             <i class="ti-home sidebar-item-child"></i>
-                            <h2 class="sidebar-item-child">Khám phá</h2>
+                            <h2 class="sidebar-item-child text-sidebar-item">Khám phá</h2>
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="link" href="/components/PlayMusic/index.html">
-                            <i class="ti-heart sidebar-item-child"></i>
-                            <h2 class="sidebar-item-child">Bài hát ưa thích</h2>
+                        <a class="link" href="/components/PlayMusic/PlayMusic.html">
+                            <i class="ti-control-play sidebar-item-child"></i>
+                            <h2 class="sidebar-item-child text-sidebar-item">Nghe Nhạc</h2>
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="link" href="/components/PlayMusic/index.html">
+                        <a class="link" href="/components/HistoryMusic/HistoryMusic.html">
                             <i class="ti-music sidebar-item-child"></i>
-                            <h2 class="sidebar-item-child">Đã nghe gần đây</h2>
+                            <h2 class="sidebar-item-child text-sidebar-item">Đã nghe gần đây</h2>
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="link" href="/components/PlayMusic/index.html">
+                        <a class="link" href="/components/Library/Library.html">
                             <i class="ti-menu-alt sidebar-item-child"></i>
-                            <h2 class="sidebar-item-child">Thư viện</h2>
+                            <h2 class="sidebar-item-child text-sidebar-item">Thư viện</h2>
                         </a>
                     </li>
-                    <ul class="sidebar-lib-list">
-                        <li class="sidebar-lib-item">
-                            <a class="link" href="/components/PlayMusic/index.html">
-                                <i class="ti-plus sidebar-item-child"></i>
-                                <h2 class="sidebar-item-child">Tạo Danh Sách</h2>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-lib-item">
-                            <a class="link" href="/components/PlayMusic/index.html">
-                                <h2 class="sidebar-item-child">Danh sách A Đã nghe gần đây Đã nghe gần đây</h2>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-lib-item">
-                            <a class="link" href="/components/PlayMusic/index.html">
-                                <h2 class="sidebar-item-child">Danh sách A Đã nghe gần đây Đã nghe gần đây</h2>
-                            </a>
-                        </li>
-                        <li class="sidebar-lib-item">
-                            <a class="link" href="/components/PlayMusic/index.html">
-                                <h2 class="sidebar-item-child">Danh sách A Đã nghe gần đây Đã nghe gần đây</h2>
-                            </a>
-                        </li>
-                        <li class="sidebar-lib-item">
-                            <a class="link" href="/components/PlayMusic/index.html">
-                                <h2 class="sidebar-item-child">Danh sách A Đã nghe gần đây Đã nghe gần đây</h2>
-                            </a>
-                        </li>
-                        <li class="sidebar-lib-item">
-                            <a class="link" href="/components/PlayMusic/index.html">
-                                <h2 class="sidebar-item-child">Danh sách B</h2>
-                            </a>
-                        </li>
-                    </ul>
                 </ul>
             </div>
 
             <div class="content">
                 <div class="content-bg">
                     <div class="content-main">
-                        <div class="content-music-top">
-                            <div class="music-section-top">
-                                <div class="music-section-infor-top">
-                                    <div class="music-section-now-top">Bài hát đang phát :</div>
-                                    <div class="music-section-song-top">Thằng điên</div>
-                                    <div class="music-section-author-top">Justatee x Phương Ly</div>
+                        <div class="content-music">
+                            <div class="music-section">
+                                <div class="music-section-infor">
+                                    <div class="music-section-now">Bài hát đang phát :</div>
+                                    <div class="music-section-song">Thằng điên</div>
+                                    <div class="music-section-author">Justatee x Phương Ly</div>
                                 </div>
-                                <div class="music-section-frame-img-top">
-                                    <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-section-img-top">
-                                    <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-section-img-drop-top">
+                                <div class="music-section-frame-img">
+                                    <img src="/assest/img/banner-1.jpg" alt="Thằng điên" class="music-section-img">
+                                    <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-section-img-drop">
                                 </div>
                             </div>
         
-                            <div class="music-track-top">
-                                <input type="range" name="playing" class="music-track-progress-top" value="0" min="0" step="1" max="100">
+                            <div class="music-track">
+                                <input type="range" name="playing" class="music-track-progress" value="0" min="0" step="1" max="100">
                                 <div class="music-loader1"></div>
                             </div>
                 
-                            <div class="music-time-top">
-                                <span class="music-curtime-top" ></span>
-                                <span class="music-sumtime-top" ></span>
+                            <div class="music-time">
+                                <span class="music-curtime" ></span>
+                                <span class="music-sumtime" ></span>
                             </div>
         
-                            <div class="music-control-top">
-                                <div class="item music-control-add-top">
+                            <div class="music-control">
+                                <div class="item music-control-add">
                                     <i title="repeat" class="ti-share"></i>
                                 </div>
-                                <div class="music-control-menu-top">
-                                    <div class="item music-control-back-btn-top">
+                                <div class="music-control-menu">
+                                    <div class="item music-control-back-btn">
                                         <i class="ti-control-skip-backward"></i>
                                     </div>
             
-                                    <div class="item music-control-play-pause-top">
+                                    <div class="item music-control-play-pause">
                                         <i class="ti-control-play"></i>
                                         <!-- <i class="ti-control-pause"></i> -->
                                     </div>
             
-                                    <div class="item music-control-next-btn-top">
+                                    <div class="item music-control-next-btn">
                                         <i class="ti-control-skip-forward"></i>
                                     </div>
                                 </div>
         
-                                <div class="item music-control-shuffle-top">
+                                <div class="item music-control-shuffle">
                                     <i title="shuffle" class="ti-control-shuffle"></i>
                                 </div>
                             </div>
@@ -277,57 +243,6 @@
                                         <h1 class="music-name">Thằng điên</h1>
                                         <p class="music-author">Justatee x Phương Ly</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- play-music-bottom -->
-                        <div class="content-music  ">
-                            <div class="music-section">
-                                <div class="music-section-infor">
-                                    <div class="music-section-now">Bài hát đang phát :</div>
-                                    <div class="music-section-song">Thằng điên</div>
-                                    <div class="music-section-author">Justatee x Phương Ly</div>
-                                </div>
-                                <div class="music-section-frame-img">
-                                    <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-section-img">
-                                    <img src="/assest/img/thang-dien.jpg" alt="Thằng điên" class="music-section-img-drop">
-                                </div>
-                            </div>
-
-                            <div class="music-remote">
-                                <div class="music-control">
-                                    <div class="item music-control-add">
-                                        <i title="repeat" class="ti-share"></i>
-                                    </div>
-                                    <div class="music-control-menu">
-                                        <div class="item music-control-back-btn">
-                                            <i class="ti-control-skip-backward"></i>
-                                        </div>
-    
-                                        <div class="item music-control-play-pause">
-                                            <i class="ti-control-play"></i>
-                                            <!-- <i class="ti-control-pause"></i> -->
-                                        </div>
-    
-                                        <div class="item music-control-next-btn">
-                                            <i class="ti-control-skip-forward"></i>
-                                        </div>
-                                    </div>
-    
-                                    <div class="item music-control-shuffle">
-                                        <i title="shuffle" class="ti-control-shuffle"></i>
-                                    </div>
-                                </div>
-    
-                                <div class="music-track">
-                                    <input type="range" name="playing" class="music-track-progress" value="0" min="0" step="1" max="100">
-                                    <div class="music-loader"></div>
-                                </div>
-    
-                                <div class="music-time">
-                                    <span class="music-curtime" ></span>
-                                    <span class="music-sumtime" ></span>
                                 </div>
                             </div>
                         </div>

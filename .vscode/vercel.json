@@ -1,0 +1,6 @@
+
+{
+    "routes": [
+      { "src": "/(?!trang1/|trang2/|trang3/).*", "dest": "/trang1/index.html" }
+    ]
+}
